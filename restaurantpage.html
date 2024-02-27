@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <title>Talj Restaurant</title>
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    
+
+</head>
+
+<body style="background-color: #3c001d;">
+
+    <nav>
+        <ul class="logo">
+            <li><a href="index.html"><img src="pictures/companylogo.png" alt="Company Logo"></a></li>
+        </ul>
+        <ul class=" nav-items">
+            <li><a href="index.html">Home</a></li>
+            <li> <a href="restaurantpage.html">Restaurant</a></li>
+            <li> <a href="page2.html">Patisserie</a></li>
+            <li> <a href="page2.html">Café</a></li>
+            <li><a href="page2.html">Chocolat</a></li>
+            <li><a href="page2.html">Keto</a></li>
+        </ul>
+    </nav>
+ 
+    <section class="menu-section">
+        <div class="overlayText">
+            <h1>Check Out Our Menu</h1>
+
+            <button onclick="OpenModal()">Menu</button>
+        </div>
+    </section>
+
+    <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div id="modal-content" class="modal-content">
+            <span onclick="CloseModal()" class="close">&times;</span>
+            <img src="pictures/Yellow Gold Classic Bordered Drinks Menu_page-0001.jpg" alt="">
+        </div>
+    </div>
+
+    <section >
+        <div style="background-color: #3c001d; " class="fourpics ">
+            <img src="pictures/rest5.jpg">
+            <img src="pictures/rest6.jpg" >
+            <img src="pictures/rest7.jpg" >
+            <img src="pictures/rest8.jpg" >
+
+        </div>
+    </section>
+   
+<div class="formcontainer">
+    <form>
+        <h2 style="text-align: center;">Make a Reservation</h2>
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" >
+
+        <label for="time">Time:</label>
+        <input type="time" id="time" name="time" >
+
+        <label for="location">Location:</label>
+        <select id="location" name="location" class="locationoptions">
+            <option value="location1">Old Montreal</option>
+            <option value="location2">Plateau-Mont-Royal</option>
+            <option value="location3">Griffintown</option>
+            <option value="location4">Rosemont–La Petite-Patrie</option>
+            <option value="location5">Le Sud-Ouest</option>
+            <option value="location6">Côte-des-Neiges</option>
+            <option value="location7">Outremont</option>
+            <option value="location8">Pointe-Saint-Charles</option>
+            <option value="location9">Little Italy</option>
+            <option value="location10">Verdun</option>
+        </select>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" >
+
+        <label for="people">Number of People:</label>
+        <input type="number" id="people" name="people" >
+
+        <button type="submit">Submit Reservation</button>
+    </form>
+
+    <hr class="vertical-line">
+
+    <div class="locationlist">
+        <ul><h2><i>Talj Restaurant Locations </i></h2></ul>
+        <ul>
+          <li>Old Montreal</li>
+          <li>Plateau-Mont-Royal</li>
+          <li>Griffintown</li>
+          <li>Rosemont–La Petite-Patrie</li>
+          <li>Le Sud-Ouest</li>
+          <li>Côte-des-Neiges</li>
+          <li>Outremont</li>
+          <li>Pointe-Saint-Charles</li>
+          <li>Little Italy</li>
+          <li>Verdun</li>
+        </ul>
+      </div>
+      
+    </div>
+
+    <footer>
+        <div class="image-wrapper">
+            <img src="pictures/companylogoblack.png" alt="Company Logo">
+        </div>
+
+        <hr class="vertical-line">
+        <div class="ContactUSHolder">
+            <p>Contact Us</p>
+            <p>customerservice@Talj.com</p>
+          <br>
+            <p>Call Us</p>
+            <p>+1 123 456 789</p>
+        </div>
+        <hr class="vertical-line">
+        <div class="social-media-holder">
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-youtube"></i>
+        </div>
+
+    </footer>
+   <script src="scripts/myScript.js"></script>
+</body>
+</html>
